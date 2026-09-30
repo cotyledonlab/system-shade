@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>System Shade</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <main>
+    <header><span class="mark" aria-hidden="true">◐</span><div><h1>System Shade</h1><p>In step with your Mac.</p></div></header>
+    <section class="status"><span id="system">Checking appearance…</span><p id="status" role="status">Connecting to this page…</p></section>
+    <label for="mode">This website <span id="hostname"></span></label>
+    <select id="mode" disabled>
+      <option value="auto">Automatic</option>
+      <option value="off">Leave website unchanged</option>
+      <option value="force">Always darken in system dark mode</option>
+    </select>
+    <p class="hint">Automatic preserves an existing dark theme. All modes follow system appearance.</p>
+    <footer>Preferences stay on this Mac.</footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

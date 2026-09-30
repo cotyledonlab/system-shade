@@ -1,0 +1,25 @@
+:root { color-scheme: light dark; font: 14px/1.5 -apple-system, BlinkMacSystemFont, sans-serif; color: #20262c; background: #f6f7f9; }
+* { box-sizing: border-box; }
+body { width: 340px; margin: 0; }
+main { padding: 24px; }
+header { display: flex; gap: 12px; align-items: center; margin-bottom: 24px; }
+.mark { font-size: 36px; line-height: 1; color: #5562bf; }
+h1 { font-size: 19px; letter-spacing: -.4px; margin: 0; }
+p { margin: 4px 0 0; }
+header p, .hint, footer { color: #59616b; }
+.status { border: 1px solid #d7dce3; border-radius: 12px; padding: 16px; margin-bottom: 20px; background: #fff; }
+#system { font-size: 12px; color: #59616b; }
+#status { font-weight: 600; }
+label { display: block; font-weight: 600; margin-bottom: 8px; }
+#hostname { display: block; overflow-wrap: anywhere; font-weight: 400; font-size: 12px; color: #59616b; }
+select { appearance: none; width: 100%; min-height: 44px; padding: 10px; border: 1px solid #b8c0cb; border-radius: 8px; font: inherit; color: inherit; background: #fff; }
+select:focus-visible { outline: 3px solid #6977d2; outline-offset: 3px; }
+.hint { font-size: 12px; margin-top: 12px; }
+footer { border-top: 1px solid #d7dce3; padding-top: 16px; margin-top: 24px; font-size: 11px; }
+@media (prefers-color-scheme: dark) {
+  :root { color: #e8edf3; background: #191c22; }
+  .status, select { background: #242831; border-color: #444b59; }
+  header p, .hint, footer, #system, #hostname { color: #aeb7c5; }
+  .mark { color: #a3afff; }
+  footer { border-color: #444b59; }
+}
